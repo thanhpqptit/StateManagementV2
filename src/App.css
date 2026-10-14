@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.app {
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 24px;
+  border-bottom: 1px solid #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #333;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Bài 1: mục đang xem có chữ đỏ, in đậm */
+.nav-link.active {
+  color: red;
+  font-weight: bold;
+}
+
+.content {
+  padding: 16px 24px;
+}
+
+/* Bài 2: danh sách bên trái, chi tiết bên phải */
+.courses {
+  display: flex;
+  gap: 32px;
+}
+
+.course-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.course-list a.active {
+  color: red;
+  font-weight: bold;
+}
+
+.course-detail {
+  flex: 1;
+}
+
+/* Bài 3 */
+.login-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 8px;
+  max-width: 260px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  color: red;
 }
