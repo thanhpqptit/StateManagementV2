@@ -10,6 +10,9 @@ import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
+import Bai1 from './state-management/bai1/Bai1';
+import Bai2 from './state-management/bai2/Bai2';
+import Bai3 from './state-management/bai3/Bai3';
 
 function App() {
   return (
@@ -38,6 +41,11 @@ function App() {
               </PrivateRoute>
             }
           />
+
+          {/* Chữa bài State Management */}
+          <Route path="/bai1" element={<Bai1 />} />
+          <Route path="/bai2" element={<Bai2 />} />
+          <Route path="/bai3" element={<Bai3 />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

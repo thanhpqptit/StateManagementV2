@@ -56,3 +56,52 @@
 .error {
   color: red;
 }
+
+/* Chữa bài State Management */
+.sm-layout {
+  border: 1px solid #ddd;
+  padding: 0 16px 16px;
+}
+
+.sm-layout.dark {
+  background: #222;
+  color: #fff;
+}
+
+.sm-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sm-header h3 {
+  margin-right: auto;
+}
+
+.sm-content {
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.sm-shop {
+  display: flex;
+  gap: 48px;
+}
+
+.sm-cart {
+  border-collapse: collapse;
+}
+
+.sm-cart th,
+.sm-cart td {
+  padding: 4px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.sm-qty {
+  display: inline-block;
+  min-width: 24px;
+  text-align: center;
+}

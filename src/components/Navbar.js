@@ -6,6 +6,9 @@ const links = [
   { to: '/about', label: 'Giới thiệu' },
   { to: '/contact', label: 'Liên hệ' },
   { to: '/dashboard', label: 'Dashboard' },
+  { to: '/bai1', label: 'SM Bài 1' },
+  { to: '/bai2', label: 'SM Bài 2' },
+  { to: '/bai3', label: 'SM Bài 3' },
 ];
 
 function Navbar() {
