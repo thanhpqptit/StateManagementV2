@@ -5,8 +5,7 @@ import { formatPrice, products } from '../data';
 import { addItem, removeItem } from './cartSlice';
 import { store } from './store';
 
-// Header, ProductList, Cart không truyền props cho nhau:
-// tất cả đọc/ghi qua store.
+
 
 function Header() {
   const count = useSelector((state) => state.cart.items.length);

@@ -15,7 +15,6 @@
   text-decoration: none;
 }
 
-/* Bài 1: mục đang xem có chữ đỏ, in đậm */
 .nav-link.active {
   color: red;
   font-weight: bold;
@@ -23,38 +22,6 @@
 
 .content {
   padding: 16px 24px;
-}
-
-/* Bài 2: danh sách bên trái, chi tiết bên phải */
-.courses {
-  display: flex;
-  gap: 32px;
-}
-
-.course-list {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.course-list a.active {
-  color: red;
-  font-weight: bold;
-}
-
-.course-detail {
-  flex: 1;
-}
-
-/* Bài 3 */
-.login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  max-width: 260px;
-}
-
-.error {
-  color: red;
 }
 
 /* Chữa bài State Management */

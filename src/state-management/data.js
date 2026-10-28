@@ -1,4 +1,3 @@
-// Dữ liệu mẫu cho Bài 2, Bài 3
 export const products = [
   { id: 1, name: 'Bàn phím', price: 500000 },
   { id: 2, name: 'Chuột', price: 200000 },

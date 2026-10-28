@@ -1,9 +1,6 @@
 import { ThemeProvider, useTheme } from './ThemeContext';
 import ThemeButton from './ThemeButton';
 
-// App → Layout → Header → ThemeButton
-// App → Layout → Content
-// Không component nào nhận theme qua props.
 
 function Header() {
   return (

@@ -3,7 +3,6 @@ import cartReducer from './cartSlice';
 
 const STORAGE_KEY = 'mini-shop-cart';
 
-// Đọc giỏ hàng đã lưu làm initialState (lỗi hoặc chưa có thì bỏ qua)
 function loadCart() {
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -22,7 +21,6 @@ export const store = configureStore({
   preloadedState: savedCart ? { cart: savedCart } : undefined,
 });
 
-// Mỗi khi state đổi → lưu lại phần cart
 store.subscribe(() => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(store.getState().cart));
 });
